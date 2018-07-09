@@ -47,7 +47,7 @@ X_train, X_val, y_train, y_val = train_test_split(train_images, labels, test_siz
 
 ### 搭建CNN网络 ###
 ## 设置参数
-batch_size = 32    # 训练批量大小
+batch_size = 128    # 训练批量大小
 epochs = 10         # 训练次数
 pool_size = (2, 2)  # 池化大小
 input_shape = X_train.shape[1 : ]   # 设置输入层的规模
