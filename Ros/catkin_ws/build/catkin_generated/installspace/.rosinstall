@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lhospital/MyProgramm/AutoDrive_Arduino/Ros/catkin_ws/install/setup.sh

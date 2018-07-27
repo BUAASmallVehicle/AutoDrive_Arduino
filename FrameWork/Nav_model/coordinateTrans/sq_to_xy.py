@@ -1,3 +1,4 @@
+# -*- coding:utf8 -*-
 # 导入包
 from scipy.optimize import fsolve, leastsq
 from scipy.integrate import quad

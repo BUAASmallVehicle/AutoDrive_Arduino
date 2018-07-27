@@ -1,3 +1,4 @@
+# -*- coding:utf8 -*-
 ## 提供接口来使小车控制程序获取数据
 import math
 import numpy as np
@@ -44,6 +45,12 @@ class move_para_geometry(control_parameters):
 		theta = math.atan(k)
 		
 		return (theta*180)/3.1415926
+	
+	def get_velocity(self):
+		pass
+	
+	def get_acceleratedSpeed(self):
+		pass
 	
 def test_move_para_geometry():
 	curve_xy = np.array([6., 5., 4., 3., 2.]) * (10 ** (-3))

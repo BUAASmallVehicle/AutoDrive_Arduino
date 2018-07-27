@@ -1,84 +1,97 @@
-# -*- coding: utf-8 -*-
-"""
-使用模型进行车道线识别
-"""
+#-*-coding: utf-8 -*-
+
+## ---------------------- ##
+## 通过神经网络实现路面的识别 ##
+## ---------------------- ##
 
 import numpy as np
 import cv2
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from scipy.misc import imresize
 from moviepy.editor import VideoFileClip
-from IPython.display import HTML
 from keras.models import load_model
+from FrameWork.Nav_model.image_handle.overturn import *
+from FrameWork.Nav_model.image_handle.road_base_line import *
+from FrameWork.Nav_model.move_with_geometry.move_para_geometry import *
 
-# 加载网络模型
-model = load_model('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/full_CNN_model.h5')
-
-
-# 定义类进行车道线检测结果的均值化
+# 定义进行车道线检测结果的均值化
 class Lanes():
 	def __init__(self):
 		self.recent_fit = []
 		self.avg_fit = []
+		
+# 定义车道线检测的类
 
-
-def road_lines(image):
-	""" 拍摄道路图像，运用模型进行车道线检测
-	并以绿色标出然后与原图像进行合并
-	"""
-	
-	print(image.shape)
-	
+def road_lines(model, image):
 	# 对即将输入给模型的图片进行预处理
 	small_img = imresize(image, (80, 160, 3))
 	small_img = np.array(small_img)
 	small_img = small_img[None, :, :, :]
-	
+		
 	# 应用模型对图片进行车道线检测并进行反标准化
 	prediction = model.predict(small_img)
 	prediction = prediction[0] * 255
-	print(prediction.shape)
-	'''
-	plt.imshow(prediction)
-	plt.show()
-	'''
+		
 	# 将预测结果添加到lanes列表中已进行均值化操作
+	lanes = Lanes()
 	lanes.recent_fit.append(prediction)
 	# 用后五个值计算均值
-	if len(lanes.recent_fit) > 5:
+	if len(lanes.recent_fit) > 10:
 		lanes.recent_fit = lanes.recent_fit[1:]
 	
 	# 计算平均检测值
 	lanes.avg_fit = np.mean(np.array([i for i in lanes.recent_fit]), axis=0)
-	print(lanes.avg_fit.shape)
+	lanes_prediction_1D = lanes.avg_fit.reshape(80, 160)
 	
-	# 生成R和B颜色维度，与G颜色维度堆叠
-	blanks = np.zeros_like(lanes.avg_fit).astype(np.uint8)
-	lane_drawn = np.dstack((blanks, lanes.avg_fit, blanks))
-	tmp_img = imresize(lane_drawn, (80, 160))
-	cv2.imwrite('tmp.png', tmp_img)
-	plt.imshow(lanes.avg_fit.reshape(80, 160))
-	plt.show()
+	return lanes_prediction_1D
 	
-	# 重新设定图像大小以匹配原图像
-	lane_image = imresize(lane_drawn, (720, 1280, 3))
+def test_lane_detection():
+	model = load_model('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/full_CNN_model.h5')
 	
-	# 将车道线图像与原图像进行合并
-	result = cv2.addWeighted(image, 1, lane_image, 1, 0)
+	# 获取视频
+	cap = cv2.VideoCapture()
+	cap.open('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/video/project_video.mp4')
+	fps = cap.get(cv2.CAP_PROP_FPS)
+	frames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
 	
-	cv2.imwrite('tmp_all.png', result)
-	
-	return result
-
-
-lanes = Lanes()
-
-# 定义生成视频的保存路径
-vid_output = 'proj_reg_vid.mp4'
-
-# 加载原始视频
-clip1 = VideoFileClip("/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/video/project_video.mp4")
-
-# 将预测图像生成GIF动画
-vid_clip = clip1.fl_image(road_lines)
-vid_clip.write_videofile(vid_output, audio=False)
+	# 进行循环
+	for i in range(int(frames)):
+		ret, frame = cap.read()
+		# 进行识别
+		Lanes_1D = road_lines(model, frame)
+		
+		output = imresize(Lanes_1D, (120, 160, 1))
+		
+		# 透视变换矩阵
+		pts1 = np.float32([[69, 110], [99, 110], [70, 115], [113, 115]])
+		pts2 = np.float32(
+			[[200, 115 - 3.73 * (113 - 70) / 1.75], [341, 115 - 3.73 * (113 - 70) / 1.75], [200, 431], [341, 431]])
+		
+		M = cv2.getPerspectiveTransform(pts1, pts2)
+		
+		# 透视变换
+		dst_img_tran = cv2.warpPerspective(output, M, (500, 700))
+		dst_img = imresize(dst_img_tran, (1280, 720))
+		
+		# 进行反转
+		dst_img_tran = np.rot90(dst_img_tran, -1)
+		# dst_img = rotation(dst_img)
+		
+		road_line = road_base_line(dst_img_tran)
+		
+		curve_xy = list(road_line.curve_xy)
+		
+		ctrl_para = move_para_geometry(30, curve_xy)
+		
+		print('SteerAngle:' + str(ctrl_para.steerAngle))
+		
+		cv2.imshow('lanes', dst_img)
+		
+		# 输入q退出
+		if cv2.waitKey(1) & 0xFF == ord('q'):
+			break
+			
+	# 释放
+	cap.release()
+	cv2.destroyAllWindows()
+		

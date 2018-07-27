@@ -1,0 +1,2 @@
+test_msg
+-DCATKIN_DEVEL_PREFIX=/home/lhospital/MyProgramm/AutoDrive_Arduino/Ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lhospital/MyProgramm/AutoDrive_Arduino/Ros/catkin_ws/install -G Unix Makefiles

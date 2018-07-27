@@ -1,3 +1,4 @@
+# -*- coding:utf8 -*-
 ## 小车控制参数的抽象类
 import abc
 
