@@ -1,1 +1,5 @@
-{}
+{
+  "lane_detection.py::test_road_base_line_1": true, 
+  "lane_detection.py::test_road_base_line_2": true, 
+  "lane_detection.py::test_rotation": true
+}

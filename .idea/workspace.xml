@@ -10,112 +10,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f5e8749-98d2-4642-9743-b92fac853895" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/FrameWork/Nav_model/Nav.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/overturn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrameWork/version_model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrameWork/version_model/lane_detection_notebook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrameWork/version_model/perspective_trans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrameWork/version_model/version_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AutoDrive_Arduino.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutoDrive_Arduino.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/lane_detection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/road_base_line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ros/catkin_ws/src/version_main_nonetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameWork/Nav_model/coordinateTrans/sq_to_xy.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/Nav_model/coordinateTrans/sq_to_xy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameWork/Nav_model/coordinateTrans/xy_to_sq.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/Nav_model/coordinateTrans/xy_to_sq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameWork/Nav_model/vehicle_control_para/control_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/Nav_model/vehicle_control_para/control_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameWork/version_model/CNN_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/version_model/CNN_train_notebook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrameWork/version_model/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/version_model/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrameWork/version_model/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/version_model/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrameWork/version_model/lane_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameWork/version_model/lane_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1758332398">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="762" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="762" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="AutoDrive_Arduino" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="lane_detection.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FrameWork/version_model/lane_detection.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1638">
-                  <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="version_main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#43#55#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="move_para_geometry.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="661">
-                  <caret line="67" column="4" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#42#53#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="road_base_line.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-156">
-                  <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="version_main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FrameWork/version_model/version_main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-                  <folding>
-                    <element signature="e#38#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="lane_detection.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/FrameWork/version_model/lane_detection.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="87" column="35" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#102#120#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="113" column="73" lean-forward="true" selection-start-line="113" selection-start-column="73" selection-end-line="113" selection-end-column="73" />
+              <folding>
+                <element signature="e#22#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2028">
+              <caret line="78" column="12" lean-forward="true" selection-start-line="74" selection-end-line="78" selection-end-column="12" />
+              <folding>
+                <element signature="e#43#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ros/catkin_ws/src/version_main_nonetwork.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1118">
+              <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+              <folding>
+                <element signature="e#43#55#0" expanded="true" />
+                <marker date="1532924409482" expanded="true" signature="260:1393" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/lane_detection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="331" column="37" lean-forward="true" selection-start-line="330" selection-start-column="8" selection-end-line="331" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -149,7 +143,6 @@
         <option value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/image_handle.py" />
         <option value="$PROJECT_DIR$/FrameWork/ROS/ros_python_publisher.py" />
         <option value="$PROJECT_DIR$/ROS/src/beginner_tutorials/src/talker.py" />
-        <option value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py" />
         <option value="$PROJECT_DIR$/FrameWork/Nav_model/Nav.py" />
         <option value="$PROJECT_DIR$/FrameWork/Nav_model/vehicle_control_para/control_parameters.py" />
         <option value="$PROJECT_DIR$/FrameWork/Nav_model/coordinateTrans/xy_to_sq.py" />
@@ -168,8 +161,13 @@
         <option value="$PROJECT_DIR$/FrameWork/version_model/version_main.py" />
         <option value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/overturn.py" />
         <option value="$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py" />
-        <option value="$PROJECT_DIR$/FrameWork/version_model/lane_detection.py" />
+        <option value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py" />
         <option value="$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py" />
+        <option value="$PROJECT_DIR$/FrameWork/version_model/lane_detection.py" />
+        <option value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/road_base_line.py" />
+        <option value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/lane_detection.py" />
+        <option value="$PROJECT_DIR$/Ros/catkin_ws/src/version_main_nonetwork.py" />
+        <option value="$PROJECT_DIR$/gg.py" />
       </list>
     </option>
   </component>
@@ -231,6 +229,11 @@
             <path>
               <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
+              <item name="DataSource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
               <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,7 +247,21 @@
               <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
               <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
               <item name="Nav_model" type="462c0819:PsiDirectoryNode" />
-              <item name="move_with_geometry" type="462c0819:PsiDirectoryNode" />
+              <item name="image_handle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
+              <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="Nav_model" type="462c0819:PsiDirectoryNode" />
+              <item name="image_handle" type="462c0819:PsiDirectoryNode" />
+              <item name="lane_detection_no_network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
+              <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="version_model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
@@ -262,57 +279,7 @@
               <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
               <item name="Ros" type="462c0819:PsiDirectoryNode" />
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="devel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
-              <item name="Ros" type="462c0819:PsiDirectoryNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="devel" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
-              <item name="Ros" type="462c0819:PsiDirectoryNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="devel" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="python2.7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
-              <item name="Ros" type="462c0819:PsiDirectoryNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="devel" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="python2.7" type="462c0819:PsiDirectoryNode" />
-              <item name="dist-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
-              <item name="Ros" type="462c0819:PsiDirectoryNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="devel" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="python2.7" type="462c0819:PsiDirectoryNode" />
-              <item name="dist-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="test_msg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoDrive_Arduino" type="462c0819:PsiDirectoryNode" />
-              <item name="Ros" type="462c0819:PsiDirectoryNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="devel" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="python2.7" type="462c0819:PsiDirectoryNode" />
-              <item name="dist-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="test_msg" type="462c0819:PsiDirectoryNode" />
-              <item name="msg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoDrive_Arduino" type="b2602c69:ProjectViewProjectNode" />
@@ -327,7 +294,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DynamixelSDK" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -355,7 +322,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.version_main (1)">
+  <component name="RunManager" selected="Python.gg">
+    <configuration name="gg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoDrive_Arduino" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_Nav_ros" type="PythonConfigurationType" factoryName="Python">
       <module name="AutoDrive_Arduino" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -373,6 +361,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="version_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AutoDrive_Arduino" />
@@ -391,24 +382,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="version_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AutoDrive_Arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FrameWork/version_model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FrameWork/version_model/version_main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="py.test for lane_detection.test_lane_detection" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="AutoDrive_Arduino" />
@@ -423,20 +399,7 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;lane_detection.test_lane_detection&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test for overturn.test_rotation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="AutoDrive_Arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FrameWork/Nav_model/image_handle" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;overturn.test_rotation&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
     </configuration>
     <configuration name="py.test in lane_detection.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="AutoDrive_Arduino" />
@@ -451,6 +414,22 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/FrameWork/version_model/lane_detection.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="py.test in move_para_geometry.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="AutoDrive_Arduino" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <configuration name="py.test in xy_to_sq.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="AutoDrive_Arduino" />
@@ -465,23 +444,24 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/FrameWork/Nav_model/coordinateTrans/xy_to_sq.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.test_Nav_ros" />
       <item itemvalue="Python tests.py.test in xy_to_sq.py" />
-      <item itemvalue="Python tests.py.test in lane_detection.py" />
       <item itemvalue="Python tests.py.test for lane_detection.test_lane_detection" />
-      <item itemvalue="Python.version_main" />
-      <item itemvalue="Python tests.py.test for overturn.test_rotation" />
       <item itemvalue="Python.version_main (1)" />
+      <item itemvalue="Python tests.py.test in move_para_geometry.py" />
+      <item itemvalue="Python tests.py.test in lane_detection.py" />
+      <item itemvalue="Python.gg" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.version_main (1)" />
-        <item itemvalue="Python.version_main" />
-        <item itemvalue="Python tests.py.test for lane_detection.test_lane_detection" />
-        <item itemvalue="Python tests.py.test for overturn.test_rotation" />
+        <item itemvalue="Python.gg" />
         <item itemvalue="Python tests.py.test in lane_detection.py" />
+        <item itemvalue="Python tests.py.test for lane_detection.test_lane_detection" />
+        <item itemvalue="Python.version_main (1)" />
+        <item itemvalue="Python tests.py.test in move_para_geometry.py" />
       </list>
     </recent_temporary>
   </component>
@@ -505,21 +485,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 18m 17s.xml">
-      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 21m 52s.xml">
-      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 22m 32s.xml">
-      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 22m 56s.xml">
-      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 30m 32s.xml">
-      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 30m 39s.xml">
       <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
     </history-entry>
@@ -534,6 +499,21 @@
     </history-entry>
     <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.23 at 18h 35m 14s.xml">
       <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.28 at 10h 19m 19s.xml">
+      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.28 at 10h 20m 42s.xml">
+      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_move_para_geometry_py - 2018.07.28 at 12h 03m 26s.xml">
+      <configuration name="py.test in move_para_geometry.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_lane_detection_test_lane_detection - 2018.07.28 at 12h 04m 57s.xml">
+      <configuration name="py.test for lane_detection.test_lane_detection" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_lane_detection_py - 2018.07.28 at 12h 06m 03s.xml">
+      <configuration name="py.test in lane_detection.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -551,24 +531,24 @@
   <component name="ToolWindowManager">
     <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49828768" visible="true" weight="0.22991544" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49720046" visible="true" weight="0.22991544" />
+      <window_info id="Structure" order="1" sideWeight="0.5017123" side_tool="true" weight="0.2706131" />
+      <window_info id="Favorites" order="2" sideWeight="0.5027996" side_tool="true" weight="0.22991544" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36525613" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.13363029" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.14893617" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.0011198209" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34602463" />
-      <window_info id="Structure" order="1" sideWeight="0.5017123" side_tool="true" weight="0.2706131" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4031355" />
-      <window_info id="Favorites" order="2" sideWeight="0.5017123" side_tool="true" weight="0.2706131" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37961927" />
       <window_info active="true" anchor="bottom" id="CMake" order="10" visible="true" weight="0.21348314" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4031355" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,6 +559,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gg.py</url>
+          <line>339</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -589,27 +576,9 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="80" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/matplotlib/image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="648" column="47" selection-start-line="648" selection-start-column="47" selection-end-line="648" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/rotation_orign.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/rotation_origin.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/image_handle.py" />
-    <entry file="file://$PROJECT_DIR$/FrameWork/AutoDrive.launch">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrameWork/ROS/src/beginner_tutorials/src/ros_python_publisher.py" />
     <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/map_road_cur.png">
       <provider selected="true" editor-type-id="images" />
@@ -717,34 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/version_model/version_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-          <folding>
-            <element signature="e#38#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/ros/melodic/lib/python2.7/dist-packages/genpy/message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
           <caret line="293" selection-start-line="293" selection-end-line="293" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/version_model/lane_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1638">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -755,22 +700,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/numpy/lib/polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3864">
+          <caret line="583" selection-start-line="583" selection-end-line="583" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/version_model/lane_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1586">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+          <folding>
+            <element signature="e#102#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/version_model/version_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#38#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/road_base_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#42#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/road_base_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3640">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#22#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/image_handle/lane_detection_no_network/lane_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="331" column="37" lean-forward="true" selection-start-line="330" selection-start-column="8" selection-end-line="331" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ros/catkin_ws/src/version_main_nonetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+          <folding>
+            <element signature="e#43#55#0" expanded="true" />
+            <marker date="1532924409482" expanded="true" signature="260:1393" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ros/catkin_ws/src/version_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        <state relative-caret-position="2028">
+          <caret line="78" column="12" lean-forward="true" selection-start-line="74" selection-end-line="78" selection-end-column="12" />
           <folding>
             <element signature="e#43#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrameWork/Nav_model/move_with_geometry/move_para_geometry.py">
+    <entry file="file://$PROJECT_DIR$/gg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="67" column="4" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        <state relative-caret-position="182">
+          <caret line="113" column="73" lean-forward="true" selection-start-line="113" selection-start-column="73" selection-end-line="113" selection-end-column="73" />
           <folding>
-            <element signature="e#42#53#0" expanded="true" />
+            <element signature="e#22#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

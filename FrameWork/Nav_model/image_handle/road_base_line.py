@@ -40,7 +40,9 @@ class road_base_line():
 					b = max(p)
 					c = int((a + b)/2)
 					fitting_pts.append([c, x])
-					
+		
+		# 从中
+		
 		# 定义自变量x与因变量y
 		x = np.array(fitting_pts).T[1]
 		y = np.array(fitting_pts).T[0]

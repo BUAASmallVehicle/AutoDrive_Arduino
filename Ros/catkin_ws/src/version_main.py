@@ -13,8 +13,8 @@ from FrameWork.Nav_model.image_handle.road_base_line import *
 from FrameWork.Nav_model.move_with_geometry.move_para_geometry import *
 from FrameWork.version_model.lane_detection import *
 
-cap = cv2.VideoCapture()
-cap.open('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/video/project_video.mp4')
+cap = cv2.VideoCapture(1)
+# cap.open('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/video/project_video.mp4')
 model = load_model('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/full_CNN_model.h5')
 
 # 透视变换矩阵
@@ -24,19 +24,26 @@ pts2 = np.float32(
 
 M = cv2.getPerspectiveTransform(pts1, pts2)
 
+# 循环参数
+n = 0
+angle_list = []
+
 def talker():
+	global n
+	
 	pub = rospy.Publisher('vehicle_ctrl_para', vehicle_ctrl)
 	rospy.init_node('talker', anonymous=True)
-	rate = rospy.Rate(10)  # 10hz
+	rate = rospy.Rate(100)  # 10hz
 	
 	ctrl_para = vehicle_ctrl()
 	while not rospy.is_shutdown():
+		n = n + 1
 		ret, frame = cap.read()
 	
 		Lanes_1D = road_lines(model, frame)
 	
 		output = imresize(Lanes_1D, (120, 160, 1))
-	
+		
 		# 进行转换
 		# output = perspective(output)
 		dst_img_tran = cv2.warpPerspective(output, M, (500, 700))
@@ -51,12 +58,16 @@ def talker():
 	
 		angle = move_para_geometry(30, curve_xy).steerAngle
 		
-		ctrl_para.accspeed = 0.0
-		ctrl_para.speed = 0.0
-		ctrl_para.angle = angle
+		angle_list.append(angle)
 		
-		rospy.loginfo(ctrl_para)
-		pub.publish(ctrl_para)
+		if n == 20:
+			n = 0
+			ctrl_para.accspeed = 0.0
+			ctrl_para.speed = 0.0
+			ctrl_para.angle = np.mean(np.array(angle_list), axis = 0)
+			rospy.loginfo(ctrl_para)
+			pub.publish(ctrl_para)
+		# cv2.imshow('lane', output)
 		
 		rate.sleep()
 

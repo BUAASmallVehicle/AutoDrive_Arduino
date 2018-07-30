@@ -20,7 +20,7 @@ class Lanes():
 		self.recent_fit = []
 		self.avg_fit = []
 		
-# 定义车道线检测的类
+# 定义车道线检测的函数
 
 def road_lines(model, image):
 	# 对即将输入给模型的图片进行预处理
@@ -36,7 +36,7 @@ def road_lines(model, image):
 	lanes = Lanes()
 	lanes.recent_fit.append(prediction)
 	# 用后五个值计算均值
-	if len(lanes.recent_fit) > 10:
+	if len(lanes.recent_fit) > 20:
 		lanes.recent_fit = lanes.recent_fit[1:]
 	
 	# 计算平均检测值
@@ -49,7 +49,7 @@ def test_lane_detection():
 	model = load_model('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/full_CNN_model.h5')
 	
 	# 获取视频
-	cap = cv2.VideoCapture()
+	cap = cv2.VideoCapture(1)
 	cap.open('/home/lhospital/MyProgramm/AutoDrive_Arduino/DataSource/Network/video/project_video.mp4')
 	fps = cap.get(cv2.CAP_PROP_FPS)
 	frames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
@@ -85,7 +85,7 @@ def test_lane_detection():
 		
 		print('SteerAngle:' + str(ctrl_para.steerAngle))
 		
-		cv2.imshow('lanes', dst_img)
+		cv2.imshow('lanes', output)
 		
 		# 输入q退出
 		if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -94,4 +94,4 @@ def test_lane_detection():
 	# 释放
 	cap.release()
 	cv2.destroyAllWindows()
-		
+	
